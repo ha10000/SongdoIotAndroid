@@ -34,13 +34,13 @@ public class SubActivity extends AppCompatActivity {
         finish();
     }
 
-    public void StartThirdactivity(View view){
+    public void startThirdactivity(View view){
         Intent intent =
                 new Intent(SubActivity.this, ThirdActivity.class);
         startActivity(intent);
     }
 
-    public void StartCallactivity(View view){
+    public void startCallactivity(View view){
         Intent intent =
                 new Intent(Intent.ACTION_CALL,
                         Uri.parse("tel:01012345678"));
@@ -50,7 +50,7 @@ public class SubActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-    public void StartWebactivity(View view){
+    public void startWebactivity(View view){
         Intent intent =
                 new Intent(Intent.ACTION_VIEW,
                         Uri.parse("http://www.naver.com"));
