@@ -2,6 +2,8 @@ package kr.linkb.helloworld;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Process;
 import android.support.annotation.LayoutRes;
@@ -9,10 +11,12 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -64,9 +68,9 @@ public class NaverOpenAPIActivity extends AppCompatActivity {
             TextView descriptionText = (TextView)view.findViewById(R.id.description);
             TextView bloggernameText = (TextView)view.findViewById(R.id.bloggername);
 
-            titleText.setText(itemList.get(position).title);
+            titleText.setText( Html.fromHtml(itemList.get(position).title) );
             postdateText.setText(itemList.get(position).postdate);
-            descriptionText.setText(itemList.get(position).description);
+            descriptionText.setText(Html.fromHtml(itemList.get(position).description));
             bloggernameText.setText(itemList.get(position).bloggername);
             return view;
         }
@@ -157,6 +161,15 @@ public class NaverOpenAPIActivity extends AppCompatActivity {
                 ListView listView = (ListView)findViewById(R.id.listview);
                 listView.setAdapter(adapter);
 //                int display = json.getInt("display");
+
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent intent = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse(itemList.get(position).link));
+                        startActivity(intent);
+                    }
+                });
             }catch(Exception e){
                 e.printStackTrace();
             }
