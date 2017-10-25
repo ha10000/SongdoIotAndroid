@@ -72,6 +72,28 @@ public class NaverOpenAPIActivity extends AppCompatActivity {
             postdateText.setText(itemList.get(position).postdate);
             descriptionText.setText(Html.fromHtml(itemList.get(position).description));
             bloggernameText.setText(itemList.get(position).bloggername);
+            final int  pos = position;
+
+            /// haha ?? start
+            titleText.setOnClickListener(new View.OnClickListener(){
+              @Override
+                public void onClick(View v){
+                  Intent intent = new Intent(Intent.ACTION_VIEW,
+                          Uri.parse(itemList.get(pos).link));
+                  startActivity(intent);
+              }
+            });
+
+            bloggernameText.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Intent.ACTION_VIEW,
+                            Uri.parse(itemList.get(pos).bloggerlink));
+                    startActivity(intent);
+                }
+            });
+
+            /// haha ?? end
             return view;
         }
     }
