@@ -63,6 +63,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void startNaverOpenAPIActivity(View view){
+        Intent intent = new Intent(
+                MainActivity.this,
+                NaverOpenAPIActivity.class);
+        startActivity(intent);
+    }
+    public void startDaumOpenAPIActivity(View view){
+        Intent intent = new Intent(
+                MainActivity.this,
+                DaumOpenAPIActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onActivityResult(
             int requestCode, int resultCode, Intent data) {
