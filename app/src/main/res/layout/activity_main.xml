@@ -17,13 +17,26 @@
         android:id="@+id/edittext"
         android:layout_below="@+id/text"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:text="Start Subactivity"
+        android:layout_below="@+id/edittext"
+        android:onClick="startSubactivity" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_below="@id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start ListView Activity"
+
+        android:onClick="startListViewActivity" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Subactivuty"
-        android:layout_below="@id/edittext"
-        android:onClick="StartSubactivity" />
-
+        android:layout_below="@id/button2"
+        android:text="start ScrollViewActivity "
+        android:onClick="startScrollViewActivity" />
 </RelativeLayout>

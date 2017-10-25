@@ -10,30 +10,30 @@
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SubActivity"
         android:textSize="40sp" />
     <EditText
         android:id="@+id/edittext"
-        android:layout_below="@+id/text"
+        android:layout_below="@id/text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content" />
     <Button
         android:id="@+id/button1"
+        android:layout_below="@id/edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Subactivity"
-        android:layout_below="@id/edittext"
+        android:text="Start Thirdactivity"
+
         android:onClick="startThirdactivity" />
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CALL"
-        android:layout_below="@id/button1"
-        android:onClick="startCallactivity" />
+        android:onClick="startCallactivity"
+        android:layout_below="@id/button1" />
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
@@ -47,6 +47,6 @@
         android:layout_height="wrap_content"
         android:text="FINISH"
         android:layout_below="@id/button3"
-        android:onClick="FinishActivity" />
+        android:onClick="finishActivity" />
 
 </RelativeLayout>

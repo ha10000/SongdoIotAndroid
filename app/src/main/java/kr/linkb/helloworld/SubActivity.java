@@ -35,15 +35,16 @@ public class SubActivity extends AppCompatActivity {
     }
 
     public void startThirdactivity(View view){
-        Intent intent =
-                new Intent(SubActivity.this, ThirdActivity.class);
+        Intent intent = new Intent(
+                SubActivity.this,
+                ThirdActivity.class);
         startActivity(intent);
     }
 
     public void startCallactivity(View view){
-        Intent intent =
-                new Intent(Intent.ACTION_CALL,
-                        Uri.parse("tel:01012345678"));
+        Intent intent = new Intent(
+                Intent.ACTION_CALL,
+                Uri.parse("tel:01012345678"));
         try {
             startActivity(intent);
         }catch(Exception e){
@@ -51,9 +52,9 @@ public class SubActivity extends AppCompatActivity {
         }
     }
     public void startWebactivity(View view){
-        Intent intent =
-                new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("http://www.naver.com"));
+        Intent intent = new Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("http://www.naver.com"));
             startActivity(intent);
     }
 

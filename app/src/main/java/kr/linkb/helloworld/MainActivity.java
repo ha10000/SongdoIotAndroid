@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void StartSubactivity(View view){
+    public void startSubactivity(View view){
 
         EditText editText =
                 (EditText)findViewById(R.id.edittext);
@@ -49,8 +49,23 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent, 1);
     }
 
+    public void startListViewActivity(View view){
+        Intent intent = new Intent(
+                MainActivity.this,
+                ListViewActivity.class);
+            startActivity(intent);
+    }
+
+    public void startScrollViewActivity(View view){
+        Intent intent = new Intent(
+                MainActivity.this,
+                ScrollViewActivity.class);
+        startActivity(intent);
+    }
+
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(
+            int requestCode, int resultCode, Intent data) {
 //        super.onActivityResult(requestCode, resultCode, data);
         switch(requestCode){
             case 1:

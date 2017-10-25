@@ -51,18 +51,23 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="25"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="#ff0000ff">
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"
-            android:background="@drawable/coala1"/>
+            android:src="@drawable/coala1"
+            android:background="#ff0000"
+            android:padding="5dp"/>
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"
-            android:background="@drawable/coala2"/>
+            android:src="@drawable/coala2"
+            android:background="#ff0000"
+            android:layout_margin="5dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -74,10 +79,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BUTTON1"/>
+            android:text="BUTTON1"
+            android:onClick="clickButton1"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BUTTON2"/>
+            android:text="BUTTON2"
+            android:onClick="clickButton2"/>
     </LinearLayout>
 </LinearLayout>
