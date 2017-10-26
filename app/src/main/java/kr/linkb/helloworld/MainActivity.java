@@ -75,7 +75,12 @@ public class MainActivity extends AppCompatActivity {
                 DaumOpenAPIActivity.class);
         startActivity(intent);
     }
-
+    public void startGoogleMapActivity(View view){
+        Intent intent = new Intent(
+                MainActivity.this,
+                GoogleMapActivity.class);
+        startActivity(intent);
+    }
     @Override
     protected void onActivityResult(
             int requestCode, int resultCode, Intent data) {
