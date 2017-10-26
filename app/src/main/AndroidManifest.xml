@@ -37,9 +37,7 @@
             android:value="@integer/google_play_services_version" />
         <!-- 지도관련 E -->
 
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".SubActivity" />
         <activity android:name=".ThirdActivity" />
         <activity android:name=".ListViewActivity" />
@@ -55,6 +53,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SensorMonitorActivity"></activity>
     </application>
 
 </manifest>
