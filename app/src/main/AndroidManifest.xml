@@ -38,11 +38,7 @@
         <!-- 지도관련 E -->
 
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".SubActivity" />
         <activity android:name=".ThirdActivity" />
@@ -51,7 +47,14 @@
         <activity android:name=".NaverOpenAPIActivity" />
         <activity android:name=".DaumOpenAPIActivity" />
         <activity android:name=".GoogleMapActivity" />
-        <activity android:name=".SQLiteDatabaseActivity"></activity>
+        <activity android:name=".SQLiteDatabaseActivity" />
+        <activity android:name=".SensorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
