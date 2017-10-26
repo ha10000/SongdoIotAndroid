@@ -55,23 +55,11 @@ public class GoogleMapActivity extends AppCompatActivity {
         });
         try{
             MapsInitializer.initialize(this);
-        } catch(Exception e) { e.printStackTrace(); }
-        startLocationService();
-    }
-    class GPSListener implements android.location.LocationListener {
-        @Override
-        public void onLocationChanged(Location location) {
-            String message = "Current location - lat:"+location.getLatitude()+
-                    ", long:"+location.getLongitude();
-            Toast.makeText(GoogleMapActivity.this, message, Toast.LENGTH_SHORT).show();
+        }catch(Exception e){
+            e.printStackTrace();
         }
-        @Override
-        public void onStatusChanged(String provider, int status, Bundle extras) {}
-        @Override
-        public void onProviderEnabled(String provider) {}
-        @Override
-        public void onProviderDisabled(String provider) {}
     }
+
 
     private void startLocationService(){
         LocationManager manager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
@@ -89,9 +77,14 @@ public class GoogleMapActivity extends AppCompatActivity {
         GPSListener gpsListener = new GPSListener();
 //        manager.requestLocationUpdates();
         long time = 10000; float dist = 0;
-        try{
-            manager.requestLocationUpdates(LocationManager.GPS_PROVIDER, time, dist, gpsListener);
-        }catch(SecurityException e){e.printStackTrace();};
-
+//   Check later     manager.requestLocationUpdates(LocationManager.GPS_PROVIDER, time, dist, gpsListener);
+    }
+    private class GPSListener implements LocationListener{
+        @Override
+        public void onLocationChanged(Location location) {
+            String message = "Current location - lat:" + location.getLatitude()+
+                    " .long:"+ location.getLongitude();
+            Toast.makeText(GoogleMapActivity.this, message, Toast.LENGTH_SHORT).show();
+        }
     }
 }
