@@ -40,7 +40,7 @@ public class SensorMonitorActivity extends AppCompatActivity implements SensorEv
         manager.unregisterListener(this);
         super.onPause();
     }
-    
+
     @Override
     public void onSensorChanged(SensorEvent event) {
         String message = "timestamp:"+event.timestamp+"\n";
