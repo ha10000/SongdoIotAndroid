@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kr.linkb.helloworld.NetworkSetActivity">
+    <!--tools:context="kr.linkb.helloworld.SensorAddActivity">-->
+    <TextView
+        android:textSize="25dp"
+        android:textColor="#99118b"
+        android:text="연결할 서버 IP PORT 정보"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="  서버 IP : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_weight="50"
+            android:id="@+id/ServerIpEditText01"
+            android:hint="192.168.0.24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="  Port: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_weight="60"
+            android:id="@+id/ServerPortEditText01"
+            android:hint="80"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:text="연결할 MongoDB IP, PORT 정보"
+        android:textSize="25dp"
+        android:textColor="#99118b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="  MonggoDB IP : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_weight="50"
+            android:id="@+id/MongoIpEditText01"
+            android:hint="192.168.0.24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="  Port: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_weight="50"
+            android:id="@+id/MongoPortEditText01"
+            android:hint="80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:textSize="25dp"
+        android:textColor="#99118b"
+        android:text="연결할 서버 MQTT PORT 정보"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="  MQTT서버 IP : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_weight="50"
+            android:id="@+id/MqttIpEditText01"
+            android:hint="192.168.0.24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="  Port: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_weight="60"
+            android:id="@+id/MqttPortEditText01"
+            android:hint="80"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="30"
+            android:onClick="writeNetworkFile"
+            android:id="@+id/ButtonWriteFile"
+            android:text="서버정보 보관"
+            android:layout_width="280dp"
+            android:layout_height="80dp" />
+        <Button
+            android:layout_weight="30"
+            android:onClick="readNetworkFile"
+            android:id="@+id/ButtonReadFile"
+            android:text="서버정보 읽기"
+            android:layout_width="280dp"
+            android:layout_height="80dp" />
+        <Button
+            android:layout_weight="30"
+            android:onClick="ButtonNetworkSave"
+            android:id="@+id/ButtonNetworkSet"
+            android:text="서버정보서버보관"
+            android:layout_width="280dp"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

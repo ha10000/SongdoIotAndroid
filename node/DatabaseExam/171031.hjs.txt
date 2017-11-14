@@ -1,0 +1,224 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. All rights reserved.
+
+C:\Users\SPTek>
+C:\Users\SPTek>
+C:\Users\SPTek>
+C:\Users\SPTek>
+C:\Users\SPTek>cd NodejsExam
+
+C:\Users\SPTek\NodejsExam>
+C:\Users\SPTek\NodejsExam>
+C:\Users\SPTek\NodejsExam>
+C:\Users\SPTek\NodejsExam>dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 3ED9-8350
+
+ C:\Users\SPTek\NodejsExam 디렉터리
+
+2017-10-31  오전 09:09    <DIR>          .
+2017-10-31  오전 09:09    <DIR>          ..
+2017-10-30  오후 02:24    <DIR>          ExpressExam
+2017-10-30  오후 01:50               680 hello.js
+2017-10-30  오후 01:39               655 hello2.js
+2017-10-31  오전 09:09         2,021,655 NodejsExam.zip
+               3개 파일           2,022,990 바이트
+               3개 디렉터리  134,167,461,888 바이트 남음
+
+C:\Users\SPTek\NodejsExam>express DatabaseExam
+
+  warning: the default view engine will not be jade in future releases
+  warning: use `--view=jade' or `--help' for additional options
+
+
+   create : DatabaseExam
+   create : DatabaseExam/package.json
+   create : DatabaseExam/app.js
+   create : DatabaseExam/public
+   create : DatabaseExam/routes
+   create : DatabaseExam/routes/index.js
+   create : DatabaseExam/routes/users.js
+   create : DatabaseExam/views
+   create : DatabaseExam/views/index.jade
+   create : DatabaseExam/views/layout.jade
+   create : DatabaseExam/views/error.jade
+   create : DatabaseExam/bin
+   create : DatabaseExam/bin/www
+   create : DatabaseExam/public/javascripts
+   create : DatabaseExam/public/images
+   create : DatabaseExam/public/stylesheets
+   create : DatabaseExam/public/stylesheets/style.css
+
+   install dependencies:
+     > cd DatabaseExam && npm install
+
+   run the app:
+     > SET DEBUG=databaseexam:* & npm start
+
+
+C:\Users\SPTek\NodejsExam>dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 3ED9-8350
+
+ C:\Users\SPTek\NodejsExam 디렉터리
+
+2017-10-31  오후 04:26    <DIR>          .
+2017-10-31  오후 04:26    <DIR>          ..
+2017-10-31  오후 04:26    <DIR>          DatabaseExam
+2017-10-30  오후 02:24    <DIR>          ExpressExam
+2017-10-30  오후 01:50               680 hello.js
+2017-10-30  오후 01:39               655 hello2.js
+2017-10-31  오전 09:09         2,021,655 NodejsExam.zip
+               3개 파일           2,022,990 바이트
+               4개 디렉터리  134,167,306,240 바이트 남음
+
+C:\Users\SPTek\NodejsExam>cd DatabaseExam
+
+C:\Users\SPTek\NodejsExam\DatabaseExam>dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 3ED9-8350
+
+ C:\Users\SPTek\NodejsExam\DatabaseExam 디렉터리
+
+2017-10-31  오후 04:26    <DIR>          .
+2017-10-31  오후 04:26    <DIR>          ..
+2017-10-31  오후 04:26             1,257 app.js
+2017-10-31  오후 04:26    <DIR>          bin
+2017-10-31  오후 04:26               332 package.json
+2017-10-31  오후 04:26    <DIR>          public
+2017-10-31  오후 04:26    <DIR>          routes
+2017-10-31  오후 04:26    <DIR>          views
+               2개 파일               1,589 바이트
+               6개 디렉터리  134,167,232,512 바이트 남음
+
+C:\Users\SPTek\NodejsExam\DatabaseExam>npm install
+npm WARN deprecated jade@1.11.0: Jade has been renamed to pug, please install th
+e latest version of pug instead of jade
+npm WARN deprecated transformers@2.1.0: Deprecated, use jstransformer
+databaseexam@0.0.0 C:\Users\SPTek\NodejsExam\DatabaseExam
++-- body-parser@1.18.2
+| +-- bytes@3.0.0
+| +-- content-type@1.0.4
+| +-- depd@1.1.1
+| +-- http-errors@1.6.2
+| | +-- inherits@2.0.3
+| | `-- statuses@1.4.0
+| +-- iconv-lite@0.4.19
+| +-- on-finished@2.3.0
+| | `-- ee-first@1.1.1
+| +-- qs@6.5.1
+| +-- raw-body@2.3.2
+| | `-- unpipe@1.0.0
+| `-- type-is@1.6.15
+|   +-- media-typer@0.3.0
+|   `-- mime-types@2.1.17
+|     `-- mime-db@1.30.0
++-- cookie-parser@1.4.3
+| +-- cookie@0.3.1
+| `-- cookie-signature@1.0.6
++-- debug@2.6.9
+| `-- ms@2.0.0
++-- express@4.15.5
+| +-- accepts@1.3.4
+| | `-- negotiator@0.6.1
+| +-- array-flatten@1.1.1
+| +-- content-disposition@0.5.2
+| +-- encodeurl@1.0.1
+| +-- escape-html@1.0.3
+| +-- etag@1.8.1
+| +-- finalhandler@1.0.6
+| | `-- statuses@1.3.1
+| +-- fresh@0.5.2
+| +-- merge-descriptors@1.0.1
+| +-- methods@1.1.2
+| +-- parseurl@1.3.2
+| +-- path-to-regexp@0.1.7
+| +-- proxy-addr@1.1.5
+| | +-- forwarded@0.1.2
+| | `-- ipaddr.js@1.4.0
+| +-- qs@6.5.0
+| +-- range-parser@1.2.0
+| +-- send@0.15.6
+| | +-- destroy@1.0.4
+| | +-- mime@1.3.4
+| | `-- statuses@1.3.1
+| +-- serve-static@1.12.6
+| +-- setprototypeof@1.0.3
+| +-- statuses@1.3.1
+| +-- utils-merge@1.0.0
+| `-- vary@1.1.2
++-- jade@1.11.0
+| +-- character-parser@1.2.1
+| +-- clean-css@3.4.28
+| | +-- commander@2.8.1
+| | | `-- graceful-readlink@1.0.1
+| | `-- source-map@0.4.4
+| |   `-- amdefine@1.0.1
+| +-- commander@2.6.0
+| +-- constantinople@3.0.2
+| | `-- acorn@2.7.0
+| +-- jstransformer@0.0.2
+| | +-- is-promise@2.1.0
+| | `-- promise@6.1.0
+| |   `-- asap@1.0.0
+| +-- mkdirp@0.5.1
+| | `-- minimist@0.0.8
+| +-- transformers@2.1.0
+| | +-- css@1.0.8
+| | | +-- css-parse@1.0.4
+| | | `-- css-stringify@1.0.5
+| | +-- promise@2.0.0
+| | | `-- is-promise@1.0.1
+| | `-- uglify-js@2.2.5
+| |   +-- optimist@0.3.7
+| |   | `-- wordwrap@0.0.3
+| |   `-- source-map@0.1.43
+| +-- uglify-js@2.8.29
+| | +-- source-map@0.5.7
+| | +-- uglify-to-browserify@1.0.2
+| | `-- yargs@3.10.0
+| |   +-- camelcase@1.2.1
+| |   +-- cliui@2.1.0
+| |   | +-- center-align@0.1.3
+| |   | | +-- align-text@0.1.4
+| |   | | | +-- kind-of@3.2.2
+| |   | | | | `-- is-buffer@1.1.6
+| |   | | | +-- longest@1.0.1
+| |   | | | `-- repeat-string@1.6.1
+| |   | | `-- lazy-cache@1.0.4
+| |   | +-- right-align@0.1.3
+| |   | `-- wordwrap@0.0.2
+| |   +-- decamelize@1.2.0
+| |   `-- window-size@0.1.0
+| +-- void-elements@2.0.1
+| `-- with@4.0.3
+|   +-- acorn@1.2.2
+|   `-- acorn-globals@1.0.9
++-- morgan@1.9.0
+| +-- basic-auth@2.0.0
+| `-- on-headers@1.0.1
+`-- serve-favicon@2.4.5
+  `-- safe-buffer@5.1.1
+
+
+C:\Users\SPTek\NodejsExam\DatabaseExam>dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 3ED9-8350
+
+ C:\Users\SPTek\NodejsExam\DatabaseExam 디렉터리
+
+2017-10-31  오후 04:28    <DIR>          .
+2017-10-31  오후 04:28    <DIR>          ..
+2017-10-31  오후 04:26             1,257 app.js
+2017-10-31  오후 04:26    <DIR>          bin
+2017-10-31  오후 04:28    <DIR>          node_modules
+2017-10-31  오후 04:26               332 package.json
+2017-10-31  오후 04:26    <DIR>          public
+2017-10-31  오후 04:26    <DIR>          routes
+2017-10-31  오후 04:26    <DIR>          views
+               2개 파일               1,589 바이트
+               7개 디렉터리  134,154,719,232 바이트 남음
+
+C:\Users\SPTek\NodejsExam\DatabaseExam>node bin\www
+GET / 200 439.052 ms - 170
+GET /stylesheets/style.css 200 5.963 ms - 111

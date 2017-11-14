@@ -1,0 +1,32 @@
+   31  git add *
+   32  pwd
+   33  cd NodejsExam/
+   34  dir
+   35  git init
+   36  git add *
+   37  git commit -m "First commit"
+   38  git remote add origin https://github.com/ha10000/SongdoIotNodejs.git
+   39  git remote rm origin
+   40  git remote add origin https://github.com/ha10000/SongdoIotNodejs.git
+   41  git push -u origin master
+   42  git remote rm origin
+   43  git remote add origin https://github.com/ha10000/SongdoIotNodejs.git
+   44  git push -u origin master
+   45  git remote add origin https://github.com/ha10000/SongdoIotNodejs.git
+   46  git remote rm origin
+   47  git remote add origin https://github.com/ha10000/SongdoIotNodejs.git
+   48  git push -u origin master
+   49  ls
+   50  git rm -r DatabaseExam/node_modules/
+   51  git rm -r ExpressExam/node_modules/
+   52  git add *
+   53  git commit -m "remove node modules"
+   54  git push
+   55  cd DatabaseExam
+   56  ls -l
+   57  npm install
+   58  ls -la
+   59  cd ..
+   60  git add *
+   61  git commit -m "test"
+   62  history
