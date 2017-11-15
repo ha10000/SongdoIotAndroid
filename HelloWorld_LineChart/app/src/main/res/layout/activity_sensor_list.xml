@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kr.linkb.helloworld.SensorListActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="센서 항목들 정보입니다."
+        android:textSize="30dp"
+        android:textColor="#0000ff"/>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/sensorControlButton"
+            android:onClick="clickSensorControlButton"
+            android:text="센서조절"
+            android:layout_weight="25"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/sensorLocationButton"
+            android:onClick="clickSensorLocationButton"
+            android:text="센서 위치"
+            android:layout_weight="25"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/sensorAddId"
+            android:layout_width="25dp"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:onClick="clickSensorAddButton"/>
+        <Button
+            android:id="@+id/sensorModifyId"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="Modify"
+            android:layout_weight="25"
+            android:onClick="clickSensorModifyButton"/>
+        <!--<Button-->
+            <!--android:id="@+id/sensorDeleteId"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Delete"-->
+            <!--android:layout_weight="20"-->
+            <!--android:onClick="clickSensorDeleteButton"/>-->
+
+    </LinearLayout>
+
+    <!--<Spinner-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></Spinner>-->
+
+</LinearLayout>

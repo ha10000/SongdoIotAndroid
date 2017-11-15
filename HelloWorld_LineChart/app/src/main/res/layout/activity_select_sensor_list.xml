@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.linkb.helloworld.SelectSensorListActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="30dp"
+        android:text="등록한 센서들"/>
+    <TextView
+        android:layout_below="@+id/title"
+        android:id="@+id/id1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1."/>
+    <TextView
+        android:layout_below="@+id/id1"
+        android:id="@+id/id2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2."/>
+    <TextView
+        android:layout_below="@+id/id2"
+        android:id="@+id/id3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3."/>
+    <TextView
+        android:layout_below="@+id/id3"
+        android:id="@+id/id4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4."/>
+    <TextView
+        android:layout_below="@+id/id4"
+        android:id="@+id/id5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5."/>
+    <TextView
+        android:layout_below="@+id/id5"
+        android:id="@+id/id6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6."/>
+    <TextView
+        android:layout_below="@+id/id6"
+        android:id="@+id/id7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7."/>
+</RelativeLayout>
